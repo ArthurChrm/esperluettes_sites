@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Arthur CHERAMY">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Carousel Template · Bootstrap</title>
+    <title>Accueil</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
 
@@ -20,10 +20,9 @@
     <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
     <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="favicon.png">
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
-
 
     <style>
         .bd-placeholder-img {
@@ -47,8 +46,11 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Carousel</a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar-custom">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Les Esperluettes
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,19 +58,23 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Membres
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="membres/antoine.html">Antoine Corgniard</a>
+                          <a class="dropdown-item" href="membres/alexis.html">Alexis Poupelin</a>
+                          <a class="dropdown-item" href="#">Théo David</a>
+                          <a class="dropdown-item" href="membres/arthur.html">Arthur Cheramy</a>
+                        </div>
+                      </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Informations 24h du code</a>
                     </li>
                 </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </nav>
     </header>
@@ -83,41 +89,33 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" /></svg>
-                    <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1>Example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <img src="images/IMG_20200225_094939.jpg" />
                     <div class="container">
                         <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            <h1>Equipe</h1>
+                            <p>Venez découvrir les Esperluettes de votre vie</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Découvrir l'équipe</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-                        <rect width="100%" height="100%" fill="#777" /></svg>
+                    <img src="images/IMG_20200225_091150-01.jpeg" />
                     <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1>One more for good measure.</h1>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        <div class="carousel-caption">
+                            <h1>24 heures du code</h1>
+                            <p>Mieux que les 24 heures du Mans</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Informations sur l'évènement</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/question-mark-1495858_1920.jpg" />
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>A propos</h1>
+                            <p>Toujours curieux ?</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">En apprendre plus</a></p>
                         </div>
                     </div>
                 </div>
@@ -137,51 +135,44 @@
   ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <div class="container marketing">
+        <div class="container presentation">
 
             <!-- Three columns of text below the carousel -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <img class="rounded-circle" src="images/Antoine_rond.jpg" width="140" height="140" />
+                    <h2>Antoine Corgniard</h2>
+                    <p>Un vieux React</p>
+                    <p>Il sera prêt à défendre React et Javascript à tout prix</p>
+                    <p><a class="btn btn-secondary" href="membres/antoine.html" role="button">Page membre &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+        </div>
+        <div class="container presentation2">
             <div class="row">
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh
-                        ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        Praesent commodo cursus magna.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <img class="rounded-circle" src="images/Alexis_rond.jpg" width="140" height="140" />
+                    <h2>Alexis Poupelin</h2>
+                    <p>Il utilise des baleines pour élever ses éléphants</p>
+                    <p>Le développeur Web des Esperluettes, Docker, PHP et Maria DB n'ont aucun secrêt
+                        pour lui.</p>
+
+                    <p><a class="btn btn-secondary" href="membres/alexis.html" role="button">Page membre &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-                        Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
-                        tortor mauris condimentum nibh.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <img class="rounded-circle" src="images/Theo_rond.jpg" width="140" height="140" />
+                    <h2>Théo David</h2>
+                    <p>Le pire ennemi des développeurs, et de très loin</p>
+                    <p>Né d'une fusion entre Java et tests unitaires, il n'hésitera pas à détruire votre
+                        code.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">Page membre &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                        role="img" aria-label="Placeholder: 140x140">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777"
-                            dy=".3em">140x140</text>
-                    </svg>
-                    <h2>Heading</h2>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
-                        ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                        condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                    <img class="rounded-circle" src="images/Arthur_rond.jpg" width="140" height="140" />
+                    <h2>Arthur Cheramy</h2>
+                    <p>Allergique au front-end et adorateur des évènements</p>
+                    <p>Du desktop au mobile, il ne cessera de vous étonner</p>
+                    <p><a class="btn btn-secondary" href="membres/arthur.html" role="button">Page membre &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 
@@ -192,20 +183,18 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your
-                            mind.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Des épreuves inattendues. <span class="text-muted">Et un suspens
+                            intense.</span></h2>
+                    <p class="lead" align="justify">4 aventuriers vont devoir survivre 24H à travers une jungle de code
+                        dans laquelle se
+                        cache moulte erreurs de syntaxes, de pointeurs nulls et bien évidemment de problèmes de
+                        logiques. </p>
+                    <p class="lead" align="justify">Vont-ils réussir à garder leur sang froid ? Vont-ils parvenir à
+                        remplir leurs
+                        objectifs ? Antoine va-t-il dépasser son record de Bluescreen ? Réponse le 21 Mars.</p>
                 </div>
                 <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 500x500">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
+                    <img src="images/undraw_circuit_board_4c4d.svg" height="100%" width="100%" />
                 </div>
             </div>
 
@@ -213,20 +202,17 @@
 
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for
-                            yourself.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Un évènement unique. <span class="text-muted">Et une fatigue
+                            partagée.</span></h2>
+                    <p class="lead" align="justify">De 10h à 10h, d'innombrables codeurs, prendront en main leurs
+                        malheurs, pour
+                        produire un code raccoleur.</p>
+                    <p class="lead"> Pendant 24h l'équipe travaillera sur un projet choisit au début de l'évènement. La
+                        meilleure solution possible devra être produite dans le lapse de temps imparti, à savoir 24h.
+                    </p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 500x500">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
+                    <img src="images/undraw_pair_programming_njlp.svg" height="100%" width="100%" />
                 </div>
             </div>
 
@@ -234,19 +220,15 @@
 
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
-                        tellus ac cursus commodo.</p>
+                    <h2 class="featurette-heading">Une nuit riche en enseignements. <span class="text-muted">Et en
+                            boissons énergisantes.</span></h2>
+                    <p class="lead" align="justify">Les esprits devront être affutés malgrés les appelles de Morphé.</p>
+                    <p class="lead" align="justify">Pour rester éveillé, tout les moyens seront bons à utiliser.
+                        Boissons énergisantes, sorties dans le froid, Hard-metal dans les oreilles... Rien ne sera à
+                        ignorer pour espérer gagner.</p>
                 </div>
                 <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 500x500">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa"
-                            dy=".3em">500x500</text>
-                    </svg>
+                    <img src="images/undraw_energizer_2224.svg" height="100%" width="100%" />
                 </div>
             </div>
 
@@ -259,8 +241,8 @@
 
         <!-- FOOTER -->
         <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p class="float-right"><a href="#">Retour en haut</a></p>
+            <p>&copy; 2020 Les Esperluettes, Inc.</p>
         </footer>
     </main>
     <script src="js/jQuery.js"></script>
