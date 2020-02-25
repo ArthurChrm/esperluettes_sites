@@ -19,3 +19,9 @@
 #icon_github:hover{
     color: gray
 }
+
+/* Image de profile */
+#img_profile{
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
