@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Membres - Alexis</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="../css/carousel.css" rel="stylesheet">
-
+    <!-- Fontawesome icons -->
     <link href="../css/fontawesome/css/all.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/members.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Barre de navigation -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <a class="navbar-brand" href="#">Carousel</a>
@@ -39,15 +41,19 @@
         </nav>
     </header>
 
+    <!-- Contenu de la page -->
     <main role="main">
-        <div class="container-fluid ml-2 mt-3 mr-2 ml-sm-0">
+        <div class="container mt-3">
+            <!-- Ligne n°1 : Photo, texte de présentation et réseaux sociaux -->
             <div class="row mb-2">
-                <div class="col-lg-4 col-md-3 col-sm-12 rounded" style="background-image: url('https://via.placeholder.com/500');">
-                    <!-- Photo -->
+                <!-- Photo de profil -->
+                <div class="col-lg-4 col-md-3 col-sm-12 rounded"
+                    style="background-image: url('https://via.placeholder.com/500');">
                 </div>
+                <!-- Texte de présentation -->
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <div class="row">
-                        <div class="col-lg-11 col-md-10 col-sm-9">
+                        <div class="col-lg-10 col-md-10 col-sm-9">
                             <div class="jumbotron mb-0">
                                 <div class="container">
                                     <h1 class="display-4 font-weight-bold">Alexis POUPELIN</h1>
@@ -56,61 +62,78 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-1 col-md-2 col-sm-3 pl-0">
-                            <a href="" class="col" style="text-align: center;"><i class="fab fa-linkedin fa-4x"></i></a>
+                        <!-- Réseaux sociaux -->
+                        <div class="col-lg-2 col-md-2 col-sm-3 pl-0">
+                            <a href="" class="col text-center"><i class="fab fa-linkedin fa-4x"></i></a>
                             <a href="" class="col"><i class="fab fa-github-square fa-4x text-dark"></i></a>
                         </div>
                     </div>
-
-
-                    <!-- Description courte -->
                 </div>
             </div>
-
+            
+            <!-- Ligne n°2 : Illustration et fake console -->
             <div class="row">
+                <!-- Illustration (undraw) -->
                 <div class="col-lg-4 col-md-3 d-lg-inline d-md-inline d-sm-none d-none">
                     <img src="../images/undraw_skills.png" class="img-fluid">
                 </div>
+                <!-- Fake console (compétences, loisirs, etc...) -->
                 <div class="col-lg-8 col-md-9 col-sm-12">
-                    <!-- Skills -->
                     <div class="skills ml-3 mr-3">
                         <div class="row">
-                            <!-- Window bar-->
                             <img src="../images/undraw_window.png" class="w-100 rounded-top">
                         </div>
-                        <div class="row border bg-dark rounded-bottom p-2 text-white" style="overflow-y: scroll;">
-                            <!-- Content -->
-                            <pre class="text-white console-text">
-<span class="text-success">root@life</span>:~# <span class="text-muted">./listSkills.sh --User a.poupelin</span>
-~~ 👨‍💻 Développement 👨‍💻 ~~
+                        <div id="console" class="row border bg-dark rounded-bottom p-2 text-white">
+                            <div class="text-white console-text">
+                                <pre class="text-success">root@life</span>:~# <span class="text-muted"
+                                    id="typed_command_1"></pre>
+                                <pre id="typed_command_1_text" class="text-white console-text"></pre>
+                                <!-- Skills développement -->
+                                <div class="d-none" id="command_1">./listSkills.sh --User a.poupelin</div>
+                                <pre class="d-none" id="command_1_text">~~ 👨‍💻 Développement 👨‍💻 ~~
 - Java
 - PHP7
 - HTML / CSS
 - C#
-
-<span class="text-success">root@life</span>:~# <span class="text-muted">./listHobbys.sh --User a.poupelin</span>
-~~ 🎨 Hobbys 🎮 ~~
+                                </pre>
+                                <pre class="text-success">root@life</span>:~# <span class="text-muted"
+                                    id="typed_command_2"></pre>
+                                <pre id="typed_command_2_text" class="text-white console-text"></pre>
+                                <!-- Hobbys -->
+                                <div id="command_2" class="d-none">./listHobbys.sh --User a.poupelin</div>
+                                <pre class="d-none" id="command_2_text">~~ 🎨 Hobbys 🎮 ~~
 - Gaming 🎮
 - Musique / MAO 🎹🎧
-
-<span class="text-success">root@life</span>:~# <span class="text-muted">./tests.sh --User a.poupelin</span>
-~~ 🔍 Tests unitaires 🔍 ~~
+                                </pre>
+                                <pre class="text-success">root@life</span>:~# <span class="text-muted"
+                                    id="typed_command_3"></pre>
+                                <pre id="typed_command_3_text" class="text-white console-text"></pre>
+                                <!-- Tests -->
+                                <div class="d-none" id="command_3">./tests.sh --User a.poupelin</div>
+                                <pre id="command_3_text" class="d-none">~~ 🔍 Tests unitaires 🔍 ~~
 (1/3) Taux de caférine dans le sang ==> ✅
 (2/3) StackOverflow ouvert dans le navigateur ==> ✅
 (3/3) Refactorisation du code ==> ⚠️ <span class="font-italic">TODO</span>
-
-<span class="text-danger">Failure...</span> (2/3 ✅)
-                            </pre>
+Failure... (2/3 ✅)
+                                </pre>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Citation -->
+        <hr class="my-4">
+        <blockquote class="blockquote text-center">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Alexis POUPELIN</footer>
+          </blockquote>
     </main>
 
     <script src="../js/jQuery.js"></script>
     <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/anime.min.js"></script>
+    <script src="../js/typed.js"></script>
     <script src="../js/membre.js"></script>
 </body>
 

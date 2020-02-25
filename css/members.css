@@ -1,0 +1,4 @@
+/* Customisation de la fake console */
+#console{
+    overflow-y: scroll;
+}
