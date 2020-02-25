@@ -8,6 +8,7 @@
 function text_command1(){
     new Typed('#typed_command_1_text',{
         strings: [$("#command_1_text").text()],
+        showCursor: false,
         onComplete: command2
     });
 }
@@ -16,6 +17,7 @@ function text_command1(){
 function text_command2(){
     new Typed('#typed_command_2_text',{
         strings: [$("#command_2_text").text()],
+        showCursor: false,
         onComplete: command3
     });
 }
@@ -24,6 +26,7 @@ function text_command2(){
 function text_command3(){
     new Typed('#typed_command_3_text',{
         strings: [$("#command_3_text").text()],
+        showCursor: false,
     });
 }
 
