@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Arthur CHERAMY">
-    <meta name="generator" content="Jekyll v3.8.6">
     <title>Accueil</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,24 +21,10 @@
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
 
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -67,12 +50,15 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="membres/antoine.html">Antoine Corgniard</a>
                           <a class="dropdown-item" href="membres/alexis.html">Alexis Poupelin</a>
-                          <a class="dropdown-item" href="#">Théo David</a>
+                          <a class="dropdown-item" href="membres/theo.html">Théo David</a>
                           <a class="dropdown-item" href="membres/arthur.html">Arthur Cheramy</a>
                         </div>
                       </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Informations 24h du code</a>
+                        <a class="nav-link" href="Infos_24h_du_code.html" tabindex="-1" aria-disabled="true">Informations 24h du code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" tabindex="-1" aria-disabled="true">A propos</a>
                     </li>
                 </ul>
             </div>
@@ -94,7 +80,7 @@
                         <div class="carousel-caption">
                             <h1>Equipe</h1>
                             <p>Venez découvrir les Esperluettes de votre vie</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Découvrir l'équipe</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="#membres" role="button">Découvrir l'équipe</a></p>
                         </div>
                     </div>
                 </div>
@@ -104,7 +90,7 @@
                         <div class="carousel-caption">
                             <h1>24 heures du code</h1>
                             <p>Mieux que les 24 heures du Mans</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Informations sur l'évènement</a>
+                            <p><a class="btn btn-lg btn-primary" href="Infos_24h_du_code.html" role="button">Informations sur l'évènement</a>
                             </p>
                         </div>
                     </div>
@@ -115,7 +101,7 @@
                         <div class="carousel-caption">
                             <h1>A propos</h1>
                             <p>Toujours curieux ?</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">En apprendre plus</a></p>
+                            <p><a class="btn btn-lg btn-primary" href="about.html" role="button">En apprendre plus</a></p>
                         </div>
                     </div>
                 </div>
@@ -135,7 +121,7 @@
   ================================================== -->
         <!-- Wrap the rest of the page in another container to center all the content. -->
 
-        <div class="container presentation">
+        <div class="container presentation" id="membres">
 
             <!-- Three columns of text below the carousel -->
             <div class="row justify-content-center">
@@ -165,7 +151,7 @@
                     <p>Le pire ennemi des développeurs, et de très loin</p>
                     <p>Né d'une fusion entre Java et tests unitaires, il n'hésitera pas à détruire votre
                         code.</p>
-                    <p><a class="btn btn-secondary" href="#" role="button">Page membre &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="membres/theo.html" role="button">Page membre &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle" src="images/Arthur_rond.jpg" width="140" height="140" />
