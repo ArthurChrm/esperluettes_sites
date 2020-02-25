@@ -1,0 +1,21 @@
+/* Customisation de la fake console */
+#console{
+    overflow-y: scroll;
+}
+
+/* Icones réseaux sociaux */
+#icon_likedin{
+    color: #0e76a8
+}
+
+#icon_likedin:hover {
+    color: #0a658f
+}
+
+#icon_github{
+    color: black
+}
+
+#icon_github:hover{
+    color: gray
+}
