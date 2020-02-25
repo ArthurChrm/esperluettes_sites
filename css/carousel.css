@@ -21,6 +21,8 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
 }
 
 /* Declare heights because of positioning of img element */
@@ -33,7 +35,8 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height:32rem;
+  height: 32rem;
+  object-fit: cover;
 }
 
 
