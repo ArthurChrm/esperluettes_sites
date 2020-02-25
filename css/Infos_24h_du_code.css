@@ -10,7 +10,7 @@
 #image_degrade{
     width: 100%; 
     margin-left: -4em; 
-    background: linear-gradient(to left, rgba(255,255,255,0.2) 70% ,rgb(52, 58, 64) 100%), center/80%, url(../img/img1.jpg);
+    background: linear-gradient(to left, rgba(255,255,255,0.2) 70% ,rgb(52, 58, 64) 100%), center/80%, url(../images/img1.jpg);
     background-repeat: no-repeat;
 }
 
