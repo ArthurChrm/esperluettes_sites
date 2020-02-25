@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="css/Infos_24h_du_code.css" />
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
     <title>Informations sur les 24 du code</title>
@@ -45,14 +46,13 @@
       </nav>
     </header>
 
-      <div class="jumbotron mt-5 text-white rounded bg-dark" style="display: flex; flex-direction: row;">
+      <div class="jumbotron mt-5 text-white rounded bg-dark" id="jumbotron">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">Les origines des 24h du code</h1>
           <p class="lead my-3">"En 2012 deux enseignants, Yann Guillerm et Catherine Cléder, encouragés par la direction ENSIM, et le président de l'Université, décident d'organiser un premier hackaton, dans cette culture geek et mancelle, le nom 24h s'est imposé."</p>
           <p class="lead mb-0"><a href="https://www.les24hducode.fr/origines" class="text-white font-weight-bold">Continuer la lecture...</a></p>
         </div>
-        <div>
-          <img src="img/img1.jpg" style="margin-right: 20px;">
+        <div id="image_degrade">
         </div>
       </div>
       <div>
@@ -60,7 +60,7 @@
       </div>
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col pl-5 pr-5" id="div_card">
           <div class="card flex-md-row mb-4 box-shadow h-md-250">
             <div class="card-body d-flex flex-column align-items-start">
               <strong >24h du code</strong>
@@ -71,7 +71,7 @@
               <p class="card-text mb-auto">C’est un défi, pour vous, passionnés de programmation, dans la famille des coding party et des hackathons. Vous êtes les bienvenus pour relever en 24h, avec votre équipe, le défi de votre choix.</p>
               <a href="https://www.les24hducode.fr/">Continuer la lecture</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-md-block"alt="Thumbnail [200x250]" style="width: 200px; height: 250px;" src="img/img3.jpg" data-holder-rendered="true">
+            <img class="card-img-right flex-auto d-none d-md-block" id="image_card" src="img/img3.jpg" data-holder-rendered="true">
           </div>
         </div>
       </div>
@@ -165,34 +165,26 @@
             <p>Lors de la remise des prix, les gagnants des premiers et seconds prix de chaque sujet sont dévoilés.</p>
             <hr>
           </div><!-- /.blog-post -->
-
-
-
-          <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Older</a>
-            <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
-          </nav>
-
         </div><!-- /.blog-main -->
 
         <aside class="col-md-4 blog-sidebar">
-          <div style="margin-top: 3em;">
-            <img src="images/installation des participants.svg" style="max-height: 11em; ">
+          <div class="d-none d-sm-none d-lg-block d-md-block d-xl-block" id="div_img1">
+            <img  src="images/installation des participants.svg" id="img_size_11">
           </div>
-         <div style="margin-top: 1em;">
-           <img src="images/presentation des sujets.svg" style="max-height: 11em; ">
+         <div class="d-none d-sm-none d-lg-block d-md-block d-xl-block" id="div_img2">
+           <img src="images/presentation des sujets.svg" id="img_size_11">
          </div>
-         <div style="margin-top: 10em;">
-          <img src="images/pause_dejeuner.svg" style="max-height: 10em; ">
+         <div class="d-none d-sm-none d-lg-block d-md-block d-xl-block" id="div_img3">
+          <img src="images/pause_dejeuner.svg" id="img_size_10">
         </div>
-         <div style="margin-top: 7em;">
-           <img src="images/coffee.svg" style="max-height: 10em; ">
+         <div class="d-none d-sm-none d-lg-block d-md-block d-xl-block" id="div_img4">
+           <img src="images/coffee.svg" id="img_size_10">
          </div>
-         <div style="margin-top: 4em;">
-          <img src="images/evaluation des projets par le jury.svg" style="max-height: 10em; ">
+         <div class="d-none d-sm-none d-lg-block d-md-block d-xl-block" id="div_img5">
+          <img src="images/evaluation des projets par le jury.svg" id="img_size_10">
         </div>
-        <div style="margin-top: 9em;">
-          <img src="images/remise_des_prix.svg" style="max-height: 10em; ">
+        <div class="d-none d-sm-none d-lg-block d-md-block d-xl-block" id="div_img6">
+          <img src="images/remise_des_prix.svg" id="img_size_10">
         </div>
         </aside><!-- /.blog-sidebar -->
 

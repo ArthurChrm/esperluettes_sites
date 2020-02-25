@@ -1,0 +1,54 @@
+#jumbotron{
+    display: flex; 
+    flex-direction: row;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-left: 10px;
+}
+
+#image_degrade{
+    width: 100%; 
+    margin-left: -4em; 
+    background: linear-gradient(to left, rgba(255,255,255,0.2) 70% ,rgb(52, 58, 64) 100%), center/80%, url(../img/img1.jpg);
+    background-repeat: no-repeat;
+}
+
+
+#image_card{
+    width: 200px; 
+    height: 250px;
+}
+
+#div_img1{
+    margin-top: 3em;
+}
+
+#div_img2{
+    margin-top: 1em;
+}
+
+#div_img3{
+    margin-top: 10em;
+}
+
+#div_img4{
+    margin-top: 7em;
+}
+
+#div_img5{
+    margin-top: 4em;
+}
+
+#div_img6{
+    margin-top: 9em
+}
+
+#img_size_11{
+    max-height: 11em;
+}
+
+#img_size_10{
+    max-height: 10em;
+}
+
